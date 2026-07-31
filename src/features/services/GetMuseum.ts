@@ -1,6 +1,6 @@
-export default async function ApiCall() {
+export default async function GetMuseum(id: string) {
 
- const API_URL = 'https://museumapi.hackeuse.fr/museums';
+ const API_URL = `https://museumapi.hackeuse.fr/museums/${id}`;
 
  try {
   const response = await fetch(API_URL)

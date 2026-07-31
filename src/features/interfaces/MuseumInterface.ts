@@ -1,4 +1,5 @@
 import type { AccessibilityGuideInterface } from "./AccessibilityGuideInterface";
+import type { ExhibitionInterface } from "./ExhibitionInterface";
 import type { LocationInterface } from "./LocationInterface";
 import type { ServicesInterface } from "./ServicesInterface";
 
@@ -15,5 +16,6 @@ export interface MuseumInterface {
  prices: string,
  accesibility: string,
  services: ServicesInterface,
- accessibilityGuide: AccessibilityGuideInterface;
+ accessibilityGuide: AccessibilityGuideInterface
+ exhibitions: ExhibitionInterface;
 }
