@@ -1,7 +1,7 @@
 # Museum Explorer
 
 ## About
-This project is related to a course evaulation in order to see how at ease students are with several aspects of frontend development.
+This project is related to a course evaluation in order to see how at ease students are with several aspects of frontend development.
 It includes creating useCase diagrams, basic product backlog and React structure components.
 
 ## Stack
