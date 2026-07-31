@@ -11,10 +11,11 @@ function App() {
 
   return (
     <>
+    <h1>Museum Explorer</h1>
       <MuseumList/>
       <MuseumCard/>
     </>
   )
 }
 
-export default App
+export default App;
