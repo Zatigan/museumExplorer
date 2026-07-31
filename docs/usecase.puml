@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+
+actor visiteur as visitor
+actor utilisateur as user
+actor administrateur as admin
+actor MuseumAPI as API
+
+user -left-|> visitor
+
+rectangle Site-Web {
+    useCase "Lister les musées" as UC1
+    useCase "Filtrer les musées" as UC2
+    useCase "Mettre un musée en favori" as UC3
+    useCase "Création d'une fiche musée" as UC4
+    useCase "Mettre à jour une fiche" as UC5
+    useCase "Uploader un document" as UC6
+    useCase "Ajouter une exposition" as UC7
+}
+
+visitor -- UC1
+visitor -- UC2
+user -- UC3
+admin -- UC4
+admin -- UC5
+admin -- UC6
+admin -- UC7
+
+UC1 --- API
+UC4 --- API
+UC5 --- API
+UC6 --- API
+UC7 --- API
+
+@enduml
