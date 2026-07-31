@@ -21,8 +21,7 @@ export default function MuseumList() {
      <li key={museum.id}>
      <p>{museum.name}</p>
      <p>{museum.city}</p>
-     <img src="assets/images/louvre.jpg" alt={`Photo du ${museum.name}`} />
-     
+     <img src={`../${museum.image}`} alt={`Photo du ${museum.name}`} />
      </li>
     )
    }
