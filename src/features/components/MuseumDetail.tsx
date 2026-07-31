@@ -6,19 +6,32 @@ import { useParams } from "react-router";
 export default function MuseumCard() {
  const [museumData, setMuseumData] = useState<MuseumInterface>();
 
- const {id} = useParams();
+ const { id } = useParams();
 
  useEffect(() => {
   GetMuseum(id as string)
-  .then((data:MuseumInterface) => {
-   setMuseumData(data);
-   console.log(data);
-  })
+   .then((data: MuseumInterface) => {
+    setMuseumData(data);
+    console.log(data);
+   })
  }, []);
 
  return (
   <>
    <h2>{`Bienvenue au ${museumData?.name}`}</h2>
+   <img src={`../${museumData?.image}`} alt={`Photo du ${museumData?.name}`} />
+   <p>{museumData?.address}</p>
+   <p>{museumData?.city}</p>
+   <p>{museumData?.description}</p>
+   <ul>
+    {/* {
+     museumData?.exhibitions.map(exhibition) =>
+    <li key={museumData?.exhibitions.id}>
+     <p>{museumData?.exhibitions.title}</p>
+    </li>
+      } */}
+   </ul>
+
   </>
  )
 }
