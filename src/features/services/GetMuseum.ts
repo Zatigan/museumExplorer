@@ -1,6 +1,10 @@
-export default async function ApiCall() {
+import { useParams } from "react-router";
 
- const API_URL = 'https://museumapi.hackeuse.fr/museums';
+export default async function GetMuseum() {
+
+ const id = useParams();
+
+ const API_URL = `https://museumapi.hackeuse.fr/museums/${id}`;
 
  try {
   const response = await fetch(API_URL)
