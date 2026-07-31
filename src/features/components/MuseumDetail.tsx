@@ -24,14 +24,8 @@ export default function MuseumCard() {
    <p>{museumData?.city}</p>
    <p>{museumData?.description}</p>
    <ul>
-    {/* {
-     museumData?.exhibitions.map(exhibition) =>
-    <li key={museumData?.exhibitions.id}>
-     <p>{museumData?.exhibitions.title}</p>
-    </li>
-      } */}
+    {/* Work in progress pour les expos */}
    </ul>
-
   </>
  )
 }
