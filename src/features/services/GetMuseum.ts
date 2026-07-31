@@ -1,8 +1,4 @@
-import { useParams } from "react-router";
-
-export default async function GetMuseum() {
-
- const id = useParams();
+export default async function GetMuseum(id: string) {
 
  const API_URL = `https://museumapi.hackeuse.fr/museums/${id}`;
 
